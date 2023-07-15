@@ -23,3 +23,24 @@ img{
 .vertical-collage img{
     height: calc((100% -5px)/2);
 }
+
+/* Responsive media quarry */
+
+@media screen and (max-width: 576px) {
+    .container-header{
+        flex-direction: column;
+        height: auto;
+    }
+    .square-collage{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .container-header{
+        flex-direction: column;
+        height: auto;
+    }
+    .square-collage{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
